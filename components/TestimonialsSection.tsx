@@ -1,3 +1,5 @@
+"use client";
+
 const testimonials = [
   {
     id: 1,
@@ -27,57 +29,58 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="bg-[#f6efef] py-24">
-      <div className="mx-auto max-w-6xl px-6 lg:px-12">
+    <section className="bg-[linear-gradient(135deg,#ffe5e8_0%,#fff5f6_100%)] py-16 md:py-24 px-6 md:px-12">
+      <div className="mx-auto max-w-6xl">
         {/* Header */}
-        <div className="max-w-2xl">
+        <div className="max-w-2xl text-left">
           <div className="mb-6 flex items-center gap-3">
-            <div className="h-px w-7 bg-primary" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.28em] text-primary">
+            <div className="h-px w-7 bg-[#c8001a]" />
+            <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#c8001a]">
               What people are saying
             </span>
           </div>
 
-          <h2 className="font-serif text-5xl font-bold leading-tight text-black md:text-6xl">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-[#1a080e]">
             Real stories from
             <br />
-            <span className="italic text-primary">real Kenyans.</span>
+            <span className="italic text-[#c8001a]">real Kenyans.</span>
           </h2>
         </div>
 
-        {/* Cards */}
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        {/* Cards Grid */}
+        <div className="mt-12 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="rounded-[28px] border border-[#f1dede] bg-white p-8 shadow-[0_4px_14px_rgba(0,0,0,0.03)]"
+              className="rounded-2xl border border-[#c8001a1f] bg-white p-6 md:p-8 shadow-[0_2px_8px_#c8001a12] hover:shadow-lg transition-shadow duration-300"
             >
               {/* Stars */}
-              <div className="mb-6 flex gap-1 text-gold">
+              <div className="mb-6 flex gap-1 text-[#ffd700]">
                 {Array.from({ length: 5 }).map((_, index) => (
-                  <span key={index} className="text-sm">
+                  <span key={index} className="text-[12px]">
                     ★
                   </span>
                 ))}
               </div>
 
               {/* Quote */}
-              <p className="font-serif text-[20px] italic leading-[1.9] text-black">
+              <p className="font-serif text-[15px] italic leading-[1.8] text-[#1a080e]">
                 "{testimonial.quote}"
               </p>
 
-              {/* User */}
+              {/* User Identity */}
               <div className="mt-10 flex items-center gap-4">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary text-sm font-semibold text-white">
+                <div className="flex w-[40px] h-[40px] shrink-0 items-center justify-center rounded-full bg-linear-to-br from-[#8f0012] to-[#c8001a] text-[14px] font-semibold text-white">
                   {testimonial.initial}
                 </div>
 
                 <div>
-                  <p className="text-base font-semibold text-black">
+                  <p className="text-[14px] font-semibold text-[#1a080e]">
                     {testimonial.name}
                   </p>
-
-                  <p className="text-sm text-[#8d7b7b]">{testimonial.role}</p>
+                  <p className="text-[12px] text-[#7a4452]">
+                    {testimonial.role}
+                  </p>
                 </div>
               </div>
             </div>

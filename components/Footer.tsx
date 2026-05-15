@@ -19,8 +19,8 @@ const footerLinks = {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-primary bg-[#2b2b2b] text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:px-16">
+    <footer className="border-t-[3px] border-primary bg-[linear-gradient(160deg,#1a080e_0%,#2d0414_100%)] text-[#ffffff61]">
+      <div className="mx-auto max-w-7xl pt-14 px-10 pb-8 ">
         {/* Top Grid */}
         <div className="grid gap-14 md:grid-cols-[1.3fr_0.7fr_0.7fr_0.7fr]">
           {/* Brand */}
@@ -38,14 +38,14 @@ export default function Footer() {
               </span>
             </Link>
 
-            <p className="mt-8 text-[15px] leading-8 text-white/55">
+            <p className="mt-8 max-w-sm text-[13px] leading-8 text-white/55">
               Kenya&apos;s rental guarantee platform — replacing cash deposits
               with insurance-backed protection for landlords and tenants.
             </p>
 
-            <p className="mt-10 text-xs leading-6 text-white/30">
-              EzraInsure Ltd · Licensed by the Insurance Regulatory Authority
-              of Kenya (IRA) · All insurance products underwritten by Britam
+            <p className="mt-4 text-[11px] leading-6 text-white/30">
+              EzraInsure Ltd · Licensed by the Insurance Regulatory Authority of
+              Kenya (IRA) · All insurance products underwritten by Britam
               Insurance Company (Kenya) Ltd.
             </p>
           </div>
@@ -81,9 +81,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 border-t border-white/10 pt-8">
           <div className="flex flex-col gap-5 text-sm text-white/35 md:flex-row md:items-center md:justify-between">
-            <p>
-              © 2025 EzraInsure Ltd. All rights reserved. Nairobi, Kenya.
-            </p>
+            <p>© 2025 EzraInsure Ltd. All rights reserved. Nairobi, Kenya.</p>
 
             <div className="flex flex-wrap items-center gap-8">
               <Link

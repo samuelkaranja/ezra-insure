@@ -23,24 +23,24 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section className="bg-[#f7f4f2] py-14 md:py-20">
+    <section className="bg-[#faf2f4] py-14 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-2xl mb-10 md:mb-14">
           <div className="flex items-center gap-3 mb-4">
             <span className="w-8 h-[2px] bg-primary"></span>
-            <p className="text-xs tracking-widest text-primary font-semibold uppercase">
+            <p className="text-[11px] tracking-widest text-primary font-bold uppercase">
               How it works
             </p>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold leading-tight text-gray-900">
+          <h2 className="text-3xl sm:text-4xl md:text-[36px] font-serif font-bold leading-tight text-gray-900">
             Simple, transparent,
             <br className="hidden sm:block" />
             <span className="text-primary italic">and built to last.</span>
           </h2>
 
-          <p className="mt-4 md:mt-5 text-gray-600 text-sm sm:text-base leading-relaxed">
+          <p className="mt-4 md:mt-3 text-[#7a4452] text-[15px] font-light max-w-[500px] sm:text-base leading-relaxed">
             Three steps replace a broken deposit system with something that
             genuinely works for everyone.
           </p>
@@ -59,8 +59,11 @@ export default function HowItWorks() {
             transition-all duration-300"
               >
                 {/* Icon */}
-                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-red-50 mb-5 sm:mb-6">
-                  <Icon className="w-5 h-5 text-primary" />
+                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-lg bg-[#fdeced] mb-5 sm:mb-6">
+                  <Icon
+                    className="w-5 h-5 text-[#c8001a] font-bold"
+                    size={20}
+                  />
                 </div>
 
                 {/* Step */}
@@ -69,20 +72,20 @@ export default function HowItWorks() {
                 </p>
 
                 {/* Title */}
-                <h3 className="text-base sm:text-lg font-serif font-medium text-gray-900 mb-2 sm:mb-3">
+                <h3 className="text-base sm:text-lg font-serif font-medium text-[#1a080e] mb-2 sm:mb-3">
                   {step.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-[13px] text-[#7a4452] font-light leading-relaxed">
                   {step.desc}
                 </p>
 
                 {/* Background Number */}
                 <span
-                  className="absolute bottom-2 right-4 sm:bottom-4 sm:right-6 
+                  className="absolute -right-2 bottom-[-2rem] sm:bottom-4 sm:right-6 
               text-[80px] sm:text-[100px] md:text-[120px] 
-              font-serif text-gray-100 opacity-40 pointer-events-none select-none"
+              font-serif text-[#c8001a] opacity-[0.05] pointer-events-none select-none"
                 >
                   0{index + 1}
                 </span>

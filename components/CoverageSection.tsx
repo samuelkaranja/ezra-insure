@@ -112,10 +112,7 @@ export default function CoverageSection() {
           <>
             Move in without
             <br />
-            the{" "}
-            <span className="italic text-primary">
-              financial strain.
-            </span>
+            the <span className="italic text-primary">financial strain.</span>
           </>
         ),
         description:
@@ -129,9 +126,7 @@ export default function CoverageSection() {
           <>
             More than a deposit
             <br />
-            <span className="italic text-primary">
-              ever gave you.
-            </span>
+            <span className="italic text-primary">ever gave you.</span>
           </>
         ),
         description:
@@ -141,31 +136,32 @@ export default function CoverageSection() {
       };
 
   return (
-    <section className="bg-[#f6f2f1] py-24">
+    <section className="bg-[#fdf9fa] py-24">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Heading */}
-        <div className="max-w-2xl">
-          <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-primary">
-            Coverage
-          </p>
+        <div className="max-w-2xl mb-3">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="w-8 h-[2px] bg-primary"></span>
+            <p className="text-[11px] font-bold uppercase tracking-[0.3em] text-primary">
+              Coverage
+            </p>
+          </div>
 
-          <h2 className="font-serif text-5xl leading-tight text-black md:text-6xl">
+          <h2 className="font-serif text-[36px] leading-tight text-[#1a080e]">
             Designed for
             <br />
-            <span className="italic text-primary">
-              both sides of the door.
-            </span>
+            <span className="italic text-primary">both sides of the door.</span>
           </h2>
         </div>
 
         {/* Tabs */}
-        <div className="mt-12 inline-flex rounded-2xl border border-primary/20 bg-[#eadcdc] p-1">
+        <div className="mt-6 inline-flex rounded-2xl border border-[#c8001a1a] bg-[#edd0d8] p-1">
           <button
             onClick={() => setActiveTab("tenant")}
-            className={`rounded-xl px-8 py-4 text-sm font-medium transition-all duration-300 ${
+            className={`rounded-xl py-[0.65rem] px-7 text-[13px] font-medium transition-all duration-300 ${
               isTenant
-                ? "bg-white text-primary shadow-sm"
-                : "text-black/60 hover:text-black"
+                ? "bg-white text-primary shadow-sm font-bold"
+                : "text-[#7a4452] hover:text-black"
             }`}
           >
             For Tenants
@@ -173,7 +169,7 @@ export default function CoverageSection() {
 
           <button
             onClick={() => setActiveTab("landlord")}
-            className={`rounded-xl px-8 py-4 text-sm font-medium transition-all duration-300 ${
+            className={`rounded-xl py-[0.65rem] px-7 text-[13px] font-medium transition-all duration-300 ${
               !isTenant
                 ? "bg-white text-primary shadow-sm"
                 : "text-black/60 hover:text-black"
@@ -184,26 +180,26 @@ export default function CoverageSection() {
         </div>
 
         {/* Content */}
-        <div className="mt-16 grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:items-start">
+        <div className="mt-10 grid gap-16 lg:grid-cols-[1fr_1.1fr] lg:items-start">
           {/* Left Side */}
           <div className="max-w-xl">
-            <p className="mb-6 text-xs font-bold uppercase tracking-[0.3em] text-primary">
+            <p className="mb-2 text-[11px] font-bold uppercase tracking-widest text-primary">
               {content.eyebrow}
             </p>
 
-            <h3 className="font-serif text-4xl leading-tight text-black md:text-5xl">
+            <h3 className="font-serif text-4xl leading-tight text-black md:text-[32px] font-bold">
               {content.title}
             </h3>
 
-            <p className="mt-8 text-lg leading-9 text-black/55">
+            <p className="mt-3 text-[14px] text-[#7a4452] font-light leading-6">
               {content.description}
             </p>
 
-            <button className="mt-10 rounded-2xl bg-primary px-8 py-5 text-base font-semibold text-white transition hover:bg-primaryDark">
+            <button className="mt-5 rounded-xl bg-[#c8001a] px-8 py-4 shadow-[0_6px_20px_rgba(200,0,26,0.28)] text-[14px] font-semibold text-white transition hover:bg-primaryDark">
               {content.button}
             </button>
 
-            <div className="mt-6 flex items-center gap-2 text-sm text-black/50">
+            <div className="mt-6 flex items-center gap-2 text-[11px] text-[#7a4452]">
               <span className="h-px w-5 bg-black/20" />
               Underwritten by Britam Insurance
             </div>
@@ -217,20 +213,20 @@ export default function CoverageSection() {
               return (
                 <div
                   key={index}
-                  className="flex gap-5 rounded-3xl border border-black/5 bg-white/70 p-6 shadow-[0_2px_8px_rgba(0,0,0,0.03)] transition hover:-translate-y-1 hover:shadow-lg"
+                  className="flex gap-5 rounded-xl bg-white/70 py-[1.1rem] px-5 shadow-[0_2px_8px_#c8001a12] border-[1.5px] border-[#c8001a1a] transition hover:-translate-y-1 hover:shadow-[0_8px_28px_#c8001a1f]"
                 >
                   <div
-                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl ${feature.bg}`}
+                    className={`flex w-[36px] h-[36px] shrink-0 items-center justify-center rounded-xl ${feature.bg}`}
                   >
-                    <Icon className={`h-5 w-5 ${feature.color}`} />
+                    <Icon className={`h-3 w-3 ${feature.color}`} />
                   </div>
 
                   <div>
-                    <h4 className="text-lg font-semibold text-black">
+                    <h4 className="text-[13px] font-semibold text-[#1a080e]">
                       {feature.title}
                     </h4>
 
-                    <p className="mt-2 text-[15px] leading-7 text-black/50">
+                    <p className="text-[12px] font-light leading-5 text-[#7a4452]">
                       {feature.description}
                     </p>
                   </div>

@@ -15,14 +15,14 @@ const features = [
     step: "01 · SCREENING",
     title: "Smart tenant screening",
     desc: "M-Pesa & alternative data. Risk-based eligibility scoring in under 3 minutes.",
-    color: "primary",
+    color: "#ff8090",
   },
   {
     icon: Camera,
     step: "02 · DOCUMENTATION",
     title: "Digital property inspections",
     desc: "Guided photo capture with timestamped, tamper-proof move-in and move-out records.",
-    color: "primary",
+    color: "#ff8090",
   },
   {
     icon: Shield,
@@ -36,14 +36,14 @@ const features = [
     step: "04 · IDENTITY",
     title: "Portable tenant profile",
     desc: "Your rental history and trust score travel with you across all future tenancies.",
-    color: "primary",
+    color: "#ff8090",
   },
   {
     icon: RotateCcw,
     step: "05 · CLAIMS",
     title: "30-day claims processing",
     desc: "A clear, structured workflow with a guaranteed 30-day payout. No ambiguity.",
-    color: "primary",
+    color: "#ff8090",
   },
   {
     icon: Home,
@@ -56,59 +56,59 @@ const features = [
 
 export default function PlatformSection() {
   return (
-    <section className="bg-[#0f0f0f] text-white py-20 px-6 md:px-12 lg:px-20">
+    <section className="bg-[linear-gradient(160deg,#1a080e_0%,#2d0414_60%,#1a080e_100%)] text-white py-16 md:py-24 px-6 md:px-12 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <div className="mb-14">
-          <p className="text-xs tracking-[0.2em] text-primary mb-3">
+        <div className="mb-10 md:mb-14 text-left">
+          <p className="text-[10px] md:text-[11px] text-[#e8305a] font-bold tracking-[0.2em] mb-3">
             — PLATFORM
           </p>
 
-          <h2 className="text-4xl md:text-5xl font-serif leading-tight">
-            Everything in <br />
+          <h2 className="text-3xl md:text-4xl lg:text-[42px] font-bold font-serif leading-tight">
+            Everything in <br className="hidden md:block" />
             <span className="text-gold italic">one place.</span>
           </h2>
 
-          <p className="mt-4 text-gray-400 max-w-xl">
+          <p className="mt-4 text-[#ffffff66] text-sm md:text-base max-w-[500px]">
             Purpose-built for the Kenyan rental market — not a workaround on an
             outdated model.
           </p>
         </div>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-white/10 rounded-2xl overflow-hidden bg-white/5 backdrop-blur">
+        {/* Grid: Stacks on mobile, 2 columns on tablet, 3 on desktop */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px border border-[#ffffff12] rounded-2xl overflow-hidden bg-[#ffffff12] backdrop-blur">
           {features.map((item, index) => {
             const Icon = item.icon;
 
             return (
               <div
                 key={index}
-                className="p-8 border border-white/10 hover:bg-white/5 transition"
+                className="py-10 px-8 bg-[#1a080e]/40 hover:bg-white/5 transition-colors duration-300"
               >
                 {/* Icon */}
                 <div
-                  className={`w-12 h-12 flex items-center justify-center rounded-lg mb-6 
+                  className={`w-11 h-11 flex items-center justify-center rounded-xl mb-6 
                   ${
                     item.color === "gold"
-                      ? "bg-gold/20 text-gold"
-                      : "bg-primary/20 text-primary"
+                      ? "bg-gold/10 text-gold"
+                      : "bg-[#e8305a]/10 text-[#e8305a]"
                   }`}
                 >
-                  <Icon size={20} />
+                  <Icon size={22} />
                 </div>
 
                 {/* Step */}
-                <p className="text-xs tracking-widest text-gray-500 mb-2">
+                <p className="text-[10px] font-bold tracking-widest text-[#ffffff47] mb-2">
                   {item.step}
                 </p>
 
                 {/* Title */}
-                <h3 className="text-lg font-semibold mb-2">
+                <h3 className="text-base text-white font-bold mb-3">
                   {item.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-gray-400 leading-relaxed">
+                <p className="text-sm text-[#ffffff61] leading-relaxed">
                   {item.desc}
                 </p>
               </div>
