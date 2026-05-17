@@ -55,7 +55,7 @@ export default function TestimonialsSection() {
               className="rounded-2xl border border-[#c8001a1f] bg-white p-6 md:p-8 shadow-[0_2px_8px_#c8001a12] hover:shadow-lg transition-shadow duration-300"
             >
               {/* Stars */}
-              <div className="mb-6 flex gap-1 text-[#ffd700]">
+              <div className="mb-6 flex gap-1 text-[#d4a017]">
                 {Array.from({ length: 5 }).map((_, index) => (
                   <span key={index} className="text-[12px]">
                     ★

@@ -56,7 +56,10 @@ const features = [
 
 export default function PlatformSection() {
   return (
-    <section className="bg-[linear-gradient(160deg,#1a080e_0%,#2d0414_60%,#1a080e_100%)] text-white py-16 md:py-24 px-6 md:px-12 lg:px-8">
+    <section
+      className="bg-[linear-gradient(160deg,#1a080e_0%,#2d0414_60%,#1a080e_100%)] text-white py-16 md:py-24 px-6 md:px-12 lg:px-8"
+      id="platform"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="mb-10 md:mb-14 text-left">

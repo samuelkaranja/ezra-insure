@@ -24,9 +24,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="mt-6 text-base md:text-lg text-[#ffffffb3] max-w-[480px] leading-relaxed">
-            EzraInsure replaces the 3-month deposit with an insurance-backed
-            guarantee — protecting landlords fully while giving tenants the
-            financial freedom they deserve.
+            EzraInsure replaces the 3-month deposit with an insurance-backed guarantee — protecting landlords fully while giving tenants the financial freedom they deserve.
           </p>
 
           {/* CTA Buttons: Responsive wrapping and width */}

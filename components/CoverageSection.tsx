@@ -136,7 +136,7 @@ export default function CoverageSection() {
       };
 
   return (
-    <section className="bg-[#fdf9fa] py-24">
+    <section className="bg-[#fdf9fa] py-24" id="coverage">
       <div className="mx-auto max-w-6xl px-6 lg:px-8">
         {/* Heading */}
         <div className="max-w-2xl mb-3">
@@ -222,11 +222,11 @@ export default function CoverageSection() {
                   </div>
 
                   <div>
-                    <h4 className="text-[13px] font-semibold text-[#1a080e]">
+                    <h4 className="text-[14px] font-bold text-[#1a080e]">
                       {feature.title}
                     </h4>
 
-                    <p className="text-[12px] font-light leading-5 text-[#7a4452]">
+                    <p className="text-[13px] font-light leading-5 text-[#7a4452]">
                       {feature.description}
                     </p>
                   </div>

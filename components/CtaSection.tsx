@@ -21,7 +21,7 @@ const ctaItems = [
 
 export default function CtaSection() {
   return (
-    <section className="bg-[#fdf9fa] py-12 md:py-24 px-4 md:px-6">
+    <section className="bg-[#fdf9fa] py-12 md:py-24 px-4 md:px-6" id="about">
       <div className="relative max-w-6xl mx-auto overflow-hidden rounded-3xl md:rounded-4xl bg-linear-to-br from-[#8f0012] via-[#c8001a] to-[#ea3a63]">
         {/* Decorative circles - Hidden on small mobile to reduce clutter */}
         <div className="hidden sm:block absolute -top-25 left-[24%] h-[320px] w-[320px] rounded-full bg-black/10" />
